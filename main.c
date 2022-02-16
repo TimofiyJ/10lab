@@ -9,11 +9,6 @@ int main() {
 	FILE* f1, *f2;
 	f1= fopen("students.txt", "r");
 	f2 = fopen("result.txt", "w");
-	if (f1 == NULL)
-	{
-		printf("я балбес!!");
-		return 0;
-	}
 	struct books* start = NULL;
 	readFile(f1, &start);
 	int min = start->pages;
